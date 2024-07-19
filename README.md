@@ -12,9 +12,9 @@ This guide provides essential Git commands for managing your repositories, branc
 ```sh
 git config --global user.email "your.email@example.com"
 ```
-- **Set default text editor**
+- **Set default text editor (VS Code)**
 ```sh
-git config --global core.editor "your-editor"
+git config --global core.editor "code --wait"
 ```
 
 ## Repository Setup
