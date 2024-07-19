@@ -2,6 +2,21 @@
 
 This guide provides essential Git commands for managing your repositories, branches, and commits effectively.
 
+## Configuration
+
+- **Set your username**
+  ```sh
+  git config --global user.name "Your Name"
+  ```
+- **Set your email**
+```sh
+git config --global user.email "your.email@example.com"
+```
+- **Set default text editor**
+```sh
+git config --global core.editor "your-editor"
+```
+
 ## Repository Setup
 
 - **Initialize a new Git repository**
