@@ -181,6 +181,8 @@ This guide provides essential Git commands for managing your repositories, branc
   git tag -d <tag-name>
   ```
 
+## Alias
+
 - **Alias Commands**
   ```sh
   git config --global alias.alias "config --get-regexp ^alias\." # List all aliases
