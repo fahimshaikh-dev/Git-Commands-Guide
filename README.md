@@ -14,11 +14,15 @@ This guide provides essential Git commands for managing your repositories, branc
   git config --global user.email "your.email@example.com"
   ```
 
-- **Set default text editor (VS Code)**
+- **Set default text editor (VS Code)(Optional)**
   ```sh
   git config --global core.editor "code --wait" # This command tells Git to use VS Code as the editor and to wait until you close the editor window before it continues.
   ```
 
+- **Edit Global Git Configuration**
+  ```sh
+  git config --global --edit # Open the global Git configuration file in your default text editor.
+  ```
 ## Repository Setup
 
 - **Initialize a new Git repository**
@@ -177,6 +181,27 @@ This guide provides essential Git commands for managing your repositories, branc
   git tag -d <tag-name>
   ```
 
+- **Alias Commands**
+  ```sh
+  git config --global alias.alias "config --get-regexp ^alias\." # List all aliases
+
+  git config --global alias.co checkout  # Create alias for checkout
+
+  git config --global --unset alias.co # Remove alias
+  ```
+
+- **Using Aliases**
+  After creating the alias, use `git co` instead of `git checkout`. For example:
+
+  ```sh
+  git co my-branch # Use the alias to checkout a branch
+  ```
+
+  This command is equivalent to:
+
+  ```sh
+  git checkout my-branch # also use the standard 'checkout' command
+  ```
 ## Help and Documentation
 
 - **Get help with a command**
