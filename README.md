@@ -189,26 +189,7 @@ This guide provides essential Git commands for managing your repositories, branc
 
   git config --global --unset alias.co # Remove alias
   ```
-  
-  ## Listing All Git Aliases
-
-  To list all the aliases you have configured in Git, use the following command:
-
-  ```bash
-  git config --get-regexp ^alias\.
-  ```
-  To simplify the process of listing all Git aliases, you can create an alias named `alias`:
-
-  ```bash
-  git config --global alias.alias "config --get-regexp ^alias\."
-  ```
-
-  With this alias, you can now simply type:
-
-  ```bash
-  git alias
-  ```
-  
+    
 - **Using Aliases**
   After creating the alias, use `git co` instead of `git checkout`. For example:
 
@@ -221,6 +202,26 @@ This guide provides essential Git commands for managing your repositories, branc
   ```sh
   git checkout my-branch # also use the standard 'checkout' command
   ```
+
+- **Listing All Git Aliases**
+
+  To list all the aliases you have configured in Git, use the following command:
+
+  ```sh
+  git config --get-regexp ^alias\.
+  ```
+  To simplify the process of listing all Git aliases, you can create an alias named `alias`:
+
+  ```sh
+  git config --global alias.alias "config --get-regexp ^alias\."
+  ```
+
+  With this alias, you can now simply type:
+
+  ```sh
+  git alias
+  ```
+
 ## Help and Documentation
 
 - **Get help with a command**
